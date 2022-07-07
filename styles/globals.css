@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-[1024px] max-w-[90%] mx-auto py-10;
+  }
+  .action-group {
+    @apply flex items-center gap-2;
+  }
+  .input {
+    @apply w-[60px] h-[40px] text-center outline-none bg-gray-700 rounded-md;
+  }
+  .btn-primary {
+    @apply px-6 py-2 bg-gray-200 text-gray-800 rounded-[40px] hover:bg-gray-400 transition-all duration-500 transform;
+  }
+  .btn-action {
+    @apply w-[60px] h-[38px] flex items-center justify-center outline-none rounded-md text-[18px] transition-all duration-500;
+  }
+  .btn-decrement {
+    @apply text-red-500 hover:text-red-700;
+  }
+  .btn-increment {
+    @apply text-green-500 hover:text-green-600;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
