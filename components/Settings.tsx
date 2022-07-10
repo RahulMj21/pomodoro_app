@@ -39,7 +39,7 @@ const Settings = ({ setShowSettings }: SettingsProps) => {
           Settings
         </h1>
         {settingsArr.map((item) => (
-          <div className="action-group">
+          <div className="action-group" key={item.id}>
             <label htmlFor="timer" className="text-[22px] tracking-wide">
               {item.label}
             </label>
